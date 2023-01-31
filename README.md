@@ -6,19 +6,24 @@ Esse repositório é dividido em 2 projetos que resolvem o problema de venda de 
 
 A segunda parte contem uma aplicação usando Flask e Postgresql, aqui não tem todas as funcionalidades requisitada no “trabalho container”, possui somente os get() e post() para cada classe. Fiz essa parte assim pois queria exercitar a orquestração de contêineres que trabalham juntos.
 
-Docker + kubernetes + Flask + Sqlite:
 
-[Sistema-de-venda-de-passagem-aerea/Parte_1_Flask_Rest_SQLite/Trab_asa (teste docker) at main · FabioRSJunior/Sistema-de-venda-de-passagem-aerea](https://github.com/FabioRSJunior/Sistema-de-venda-de-passagem-aerea/tree/main/Parte_1_Flask_Rest_SQLite/Trab_asa%20(teste%20docker))
 
-Docker + kubernetes + Flask + MySQL:
+[Docker + kubernetes + Flask + Sqlite ](https://github.com/FabioRSJunior/Sistema-de-venda-de-passagem-aerea/tree/main/Parte_1_Flask_Rest_SQLite/Trab_asa%20(teste%20docker))
 
-[Sistema-de-venda-de-passagem-aerea/Parte_2_Flask_Postgres/k8s_final at main · FabioRSJunior/Sistema-de-venda-de-passagem-aerea](https://github.com/FabioRSJunior/Sistema-de-venda-de-passagem-aerea/tree/main/Parte_2_Flask_Postgres/k8s_final)
+[Docker + kubernetes + Flask + MySQL ](https://github.com/FabioRSJunior/Sistema-de-venda-de-passagem-aerea/tree/main/Parte_2_Flask_Postgres/k8s_final)
 
 # Introdução:
 
-![https://www.notion.so../Digital%20inovation/Carrefour_Data_Engineer_2021/M9_arquitetura_sistemas_avan%C3%A7ados/image-20211109001251797.png](https://www.notion.so../Digital%20inovation/Carrefour_Data_Engineer_2021/M9_arquitetura_sistemas_avan%C3%A7ados/image-20211109001251797.png)
+Foi solicitado a equipe de Backend a crianão do sistema de uma empresa de venda de passagens aereas, com as seguintes chamadas e microserviços que atenda a seguinte tabela:
 
-image-20211109001251797
+|  | Faz: | Endereço | função | json post() |
+| --- | --- | --- | --- | --- |
+| 1 | Retorna a mensagem de tudo bem | http://127.0.0.1:5000/ | retorna a mensagem |  |
+| 2 | Retorna uma lista com todos os usuarios | http://127.0.0.1:5000/usuarios/ | Retorna usuários | {“nome”:“fabio3”,“email”:“fabio3@triste”, “senha_usuario”:“31234”,“senha_token”:“3192”} |
+| 3 | Retorna uma lista com todos os aeroportos | http://127.0.0.1:5000/aeroportos | Retorna aertoportos | {“nome_aeroporto”: “Romeu Zema”, “cidade_aeroporto”: “Araxa” } |
+| 4 | Retorna uma lista com todos os voos | http://127.0.0.1:5000/voos | retorna voos | {“nome_aeroporto_saida”: “romeu zema”,“nome_aeroporto_chegada”: “Uberlandiaairport”, “data_voo”: “agora”,“valor_voo”: “umreal”} |
+| 5 | Retorna compras | http://127.0.0.1:5000/compras | Retorna compras | {“id_usuario”: “1”,“id_vooo”: “1”,“id_valor_voo”: “umreal”} |
+
 
 # Parte 1
 
