@@ -1,11 +1,3 @@
-![Screenshot from 2021-11-08 10-17-30](https://user-images.githubusercontent.com/32616499/215814112-f46237ab-975c-4b46-b20f-2418e39d771c.png)
-![Screenshot from 2021-11-08 10-17-50](https://user-images.githubusercontent.com/32616499/215814120-6a2771e5-9e4d-402f-a602-271a97a0f268.png)
-![Screenshot from 2021-11-08 20-44-47](https://user-images.githubusercontent.com/32616499/215814129-b2097452-8110-45a0-af9c-0d0836f75ef9.png)
-![Screenshot from 2021-11-08 22-29-12](https://user-images.githubusercontent.com/32616499/215814138-af066b56-364e-4fd0-99c0-b4953d7bf1c4.png)
-![Screenshot from 2021-11-08 22-30-38](https://user-images.githubusercontent.com/32616499/215814143-b9130aa7-b6dc-4834-af94-aca5e280dce2.png)
-![Screenshot from 2021-11-08 22-33-16](https://user-images.githubusercontent.com/32616499/215814147-b2ba18d8-41ca-4704-a6ec-3cbd577823c6.png)
-![Screenshot from 2021-11-08 23-06-10](https://user-images.githubusercontent.com/32616499/215814149-8f52879a-51fe-491d-874f-96e6a6967f1a.png)
-
 # Sistema para venda de passagens aéreas
 
 # Explicação:
