@@ -1,0 +1,40 @@
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "flask"
+  namespace: "default"
+  labels:
+    app: "flask"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "flask"
+  template:
+    metadata:
+      labels:
+        app: "flask"
+    spec:
+      containers:
+      - name: "flask-final1"
+        image: "fabioromerojunior99/flask-lite:flask-lite-10"
+
+
+---
+apiVersion: "v1"
+kind: "Service"
+metadata:
+  name: "flask-service"
+  namespace: "default"
+  labels:
+    app: "flask"
+spec:
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 5000
+  selector:
+    app: "flask"
+  type: "LoadBalancer"
+  loadBalancerIP: ""
+
